@@ -1,0 +1,3 @@
+#!/bin/sh
+killall web_focus wf_r3
+./wf_r3 &> /dev/null &

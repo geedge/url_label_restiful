@@ -1,0 +1,33 @@
+{
+    "compile_table": "CONFIG_COMPILE",
+    "group_table": "CONFIG_GROUP",
+    "rules": [
+        {
+            "compile_id": 1,
+            "service": 50,
+            "action": 2,
+            "do_blacklist": 1,
+            "do_log": 1,
+            "effective_rage": 0,
+            "user_region": "DOMAIN_ID=151;DOMAIN_STR=baidu.com",
+            "is_valid": "yes",
+            "groups": [
+                {
+                    "group_name": "group_1",
+                    "regions": [
+                        {
+                            "table_name": "PXY_INTERCEPT_DOMAIN",
+                            "table_type": "expr",
+                            "table_content": {
+                                "keywords": "baidu.com",
+                                "expr_type": "and",
+                                "match_method": "sub",
+                                "format": "uncase plain"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
